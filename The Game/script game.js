@@ -35,15 +35,6 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-reset.addEventListener("click", () => {
-    playerScoreCount.innerText = 0;
-    computerScoreCount.innerText = 0;
-    playerChoices.innerHTML = '<h2>Player Choice</h2>';
-    computerChoices.innerHTML = '<h2>Computer Choice</h2>';
-    result.innerHTML = `<p>Let's Play!</p>`;
-    player.remove('img');
-    computer.remove('img');
-})
 
 options.forEach((option) => {
     option.addEventListener("click", () => {
@@ -91,3 +82,10 @@ options.forEach((option) => {
 
     })
 });
+reset.addEventListener("click", () => {
+    playerScoreCount.innerText = 0;
+    computerScoreCount.innerText = 0;
+    playerChoices.innerHTML = '<h2>Player Choice</h2>';
+    computerChoices.innerHTML = '<h2>Computer Choice</h2>';
+    result.innerHTML = `<p>Let's Play!</p>`;
+})
