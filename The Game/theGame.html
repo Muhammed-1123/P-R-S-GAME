@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper Scissors Rock Game</title>
+    <link rel="stylesheet" href="./style game.css">
+    <script src="./script game.js" defer></script>
+</head>
+<body>
+    <button id="theme-toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"  viewBox="0 0 256 256"><path d="M120,40V16a8,8,0,0,1,16,0V40a8,8,0,0,1-16,0Zm72,88a64,64,0,1,1-64-64A64.07,64.07,0,0,1,192,128Zm-16,0a48,48,0,1,0-48,48A48.05,48.05,0,0,0,176,128ZM58.34,69.66A8,8,0,0,0,69.66,58.34l-16-16A8,8,0,0,0,42.34,53.66Zm0,116.68-16,16a8,8,0,0,0,11.32,11.32l16-16a8,8,0,0,0-11.32-11.32ZM192,72a8,8,0,0,0,5.66-2.34l16-16a8,8,0,0,0-11.32-11.32l-16,16A8,8,0,0,0,192,72Zm5.66,114.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32-11.32ZM48,128a8,8,0,0,0-8-8H16a8,8,0,0,0,0,16H40A8,8,0,0,0,48,128Zm80,80a8,8,0,0,0-8,8v24a8,8,0,0,0,16,0V216A8,8,0,0,0,128,208Zm112-88H216a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Z"></path></svg>
+    </button>
+    <div class="container">
+        <h1>Paper Rock Scissors Game</h1>
+        <div class="rest">
+            <button id="reset">RESET THE TOUR</button>
+        </div>
+        <div class="score">
+            <div class="player-score">
+                <h2>PLAYER SCORE :<span class="player-score-count" > 0 </span></h2>
+                
+            </div>
+            <div class="computer-score">
+                <h2>COMPUTER SCORE : <span class="computer-score-count">0</span></h2>
+            </div>
+        </div>
+        
+        <div class="result">
+            <p>Let's Play!</p>
+        </div>
+        
+        <div class="choices">
+            <div class="player-choice">
+                <h2>Player Choice</h2>
+            </div>
+            VS
+            <div class="computer-choice">
+                <h2>Computer Choice</h2>
+            </div>
+        </div>
+        
+        <div class="intro">
+            <h3>Choose your move, Rock Paper or Scissors</h3>
+            <div class="options">
+                <button class="rock" value="rock">ROCK</button>
+                <button class="paper" value="paper">PAPER</button>
+                <button class="scissors" value="scissors">SCISSORS</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

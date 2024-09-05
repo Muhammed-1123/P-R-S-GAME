@@ -1,0 +1,98 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(32, 37, 54);
+    color: rgb(223, 220, 220);
+    transition: background-color .5s, color .3s;
+}
+#theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color:transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: hsl(0, 0%, 65%);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 30px;
+}
+
+.container h1 {
+    text-align: center;
+    color: #aaaaee;
+}
+
+.container h1 p {
+    color: #aaaaee;
+    font-size: 40px;
+    width: 100%;
+}
+
+.container a {
+    text-align: center;
+    padding: 15px 15px;
+    width: 20%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(0, 21, 255);
+    text-decoration: none;
+    color: rgb(235, 231, 231);
+}
+.container a:hover {
+    background-color: rgb(80, 94, 240);
+    color: rgb(235, 231, 231);
+}
+
+.container p {
+    text-align: center;
+    width: 50%;
+    font-size: 40px;
+    color: #aaaaee;
+}
+
+.light-mode {
+    background-color:#d1d0d0;
+    transition: background-color .5s, color .3s;
+}
+.light-mode #theme-toggle {
+    fill: rgb(32, 37, 54);
+}
+.light-mode .container h1 {
+    color: rgb(2, 23, 92);
+}
+.light-mode .container a {
+    background-color: rgb(199, 0, 0);
+    color: rgb(235, 231, 231);
+}
+.light-mode .container a:hover {
+    background-color: rgb(255, 88, 88);
+    color: rgb(245, 245, 245);
+}
+.light-mode .container p {
+    color: rgb(2, 23, 92);
+}
