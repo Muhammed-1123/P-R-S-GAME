@@ -40,7 +40,7 @@ reset.addEventListener("click", () => {
     computerScoreCount.innerText = 0;
     playerChoices.innerHTML = '<h2>Player Choice</h2>';
     computerChoices.innerHTML = '<h2>Computer Choice</h2>';
-    result.innerText = `<p>Let's Play!</p>`;
+    result.innerHTML = `<p>Let's Play!</p>`;
     player.remove('img');
     computer.remove('img');
 })
