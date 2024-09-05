@@ -163,6 +163,10 @@ img {
 
 
 @media screen and (max-width: 600px) {
+    #theme-toggle {
+        right: 10px;
+        top: 10px;
+    }
     .container h1 {
         width: 80%;
         text-align: center;
